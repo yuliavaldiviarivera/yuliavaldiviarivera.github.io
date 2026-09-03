@@ -142,6 +142,7 @@ h1 {
 
 section {
   padding: 3rem 0;
+  scroll-margin-top: 3.5rem;
 }
 
 section.alt {
@@ -162,9 +163,11 @@ h2 {
 
 .portrait {
   width: 5cm;
+  min-width: 5cm;
   height: auto;
   flex-shrink: 0;
   display: block;
+  background: var(--line);
 }
 
 .about-copy p:last-child {
