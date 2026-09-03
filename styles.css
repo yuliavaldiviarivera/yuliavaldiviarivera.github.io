@@ -6,7 +6,7 @@
   --line: #e7e5e4;
   --paper: #faf8f5;
   --white: #ffffff;
-  --max: 44rem;
+  --max: 42rem;
 }
 
 * {
@@ -86,46 +86,17 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover,
-nav a[aria-current="page"] {
+nav a:hover {
   color: var(--maroon);
 }
 
-nav a[aria-current="page"] {
-  font-weight: 600;
-}
-
-.page {
-  padding: 3rem 0 4rem;
-}
-
-.page.tight-top {
-  padding-top: 0;
-}
-
 .hero {
-  padding: 3.25rem 0 2.5rem;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 9.5rem 1fr;
-  gap: 1.75rem 2rem;
-  align-items: start;
-}
-
-.portrait {
-  width: 9.5rem;
-  height: 9.5rem;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  background: var(--white);
+  padding: 4.5rem 0 3.25rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .kicker {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.75rem;
   color: var(--maroon);
   font-size: 0.8rem;
   font-weight: 600;
@@ -134,33 +105,23 @@ nav a[aria-current="page"] {
 }
 
 h1 {
-  margin: 0 0 0.85rem;
-  font-size: clamp(2rem, 4.5vw, 2.7rem);
+  margin: 0 0 1rem;
+  font-size: clamp(2.1rem, 5vw, 3.1rem);
   font-weight: 700;
 }
 
-h2 {
-  margin: 0 0 1rem;
-  font-size: 1.55rem;
-}
-
-h3 {
-  margin: 2rem 0 0.85rem;
-  font-size: 1.1rem;
-  color: var(--maroon-dark);
-}
-
-.lede,
-.muted {
+.lede {
+  margin: 0 0 1.75rem;
   color: var(--muted);
+  font-size: 1.2rem;
 }
 
 .hero-links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.85rem 1.15rem;
-  margin: 1.35rem 0 0;
+  gap: 1rem 1.25rem;
+  margin: 0;
 }
 
 .button {
@@ -179,18 +140,37 @@ h3 {
   color: var(--white);
 }
 
-.paper {
-  margin-bottom: 1.5rem;
+section {
+  padding: 3rem 0;
 }
 
-.paper h3 {
+section.alt {
+  background: var(--white);
+  border-block: 1px solid var(--line);
+}
+
+h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.65rem;
+}
+
+h3 {
+  margin: 2rem 0 1rem;
+  font-size: 1.15rem;
+  color: var(--maroon-dark);
+}
+
+.paper {
+  margin-bottom: 1.75rem;
+}
+
+.paper h4 {
   margin: 0 0 0.25rem;
-  color: var(--ink);
   font-size: 1.12rem;
 }
 
 .meta {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.5rem;
   color: var(--muted);
   font-style: italic;
 }
@@ -200,14 +180,16 @@ h3 {
   font-size: 0.95rem;
 }
 
+.pub-list,
 .plain,
-.pub-list {
+.contact {
   margin: 0;
   padding-left: 1.15rem;
 }
 
+.pub-list li,
 .plain li,
-.pub-list li {
+.contact li {
   margin-bottom: 0.65rem;
 }
 
@@ -217,7 +199,7 @@ h3 {
 }
 
 footer {
-  padding: 1.35rem 0 2rem;
+  padding: 1.5rem 0 2.25rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
@@ -229,13 +211,7 @@ footer {
     gap: 0.5rem;
   }
 
-  .hero-grid {
-    grid-template-columns: 1fr;
-    justify-items: start;
-  }
-
-  .portrait {
-    width: 8.25rem;
-    height: 8.25rem;
+  .hero {
+    padding-top: 2.5rem;
   }
 }
